@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Slider.css" type="text/css" />
+    </head>
+    <body>
+        <div style="display:flex;justify-content:center;width:100%;background-color:grey;height:500px;margin-top:100px;">
+            <div id="sliderLoader" style="padding-top:100px;width:70%;"></div>
+        </div>
+        <div id="slider1" class="slider">
+            <div class="sliderItems" style="height:300px;width:300px;border-radius:200px;">
+                <img src="https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" height="300px" width="300px" style="border-radius:200px;" ></img>
+            </div>
+            <div class="sliderItems" style="height:300px;width:300px;background-color:blue;">
+                <img src="https://images.unsplash.com/photo-1572900804168-1fc540afecda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" height="300px" width="300px" ></img>
+            </div>
+            <div class="sliderItems" style="height:300px;width:300px;background-color:green;">
+                <img src="https://images.unsplash.com/photo-1572380473932-d92a2d8f0e27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" height="300px" width="300px" ></img>
+            </div>
+            <div class="sliderItems" style="height:300px;width:300px;background-color:yellow;">
+                <img src="https://images.unsplash.com/photo-1572945768565-b39ea649e46b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" height="300px" width="300px" ></img>
+            </div>
+            <div class="sliderItems" style="height:300px;width:300px;background-color:orange;">
+                <img src="https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" height="300px" width="300px" ></img>
+            </div>
+        </div>
+        <script src="Slider.js" type="text/javascript" ></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+            function init()
+            {
+                //container_id,data_id
+                initSlider("sliderLoader","slider1",{
+                    itemCount : 3 
+                });
+            }
+            init();
+        </script>
+    </body>
+</html>
